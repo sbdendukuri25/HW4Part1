@@ -1,9 +1,8 @@
 # README — HW4 (Part 1)
 Author: **Sri Bhargava Dendukuri**  
 Course: **COMP 4610 — GUI Programming I**
-Repo: https://github.com/<username>/hw3-dynamic-table
-Live: https://<username>.github.io/hw3-dynamic-table/
-
+Repo: https://github.com/sbdendukuri25/HW4Part1.git
+Live: https://sbdendukuri25.github.io/HW4Part1/
 ----------------------------------------------
 
 ## HW3 — Dynamic Multiplication Table
