@@ -1,0 +1,76 @@
+<!--
+  HW4 Part 1 — Dynamic Multiplication Table w/ jQuery Validation
+  Author: Sri Bhargava Dendukuri
+  Email: SriBhargava_Dendukuri@student.uml.edu
+  Course: COMP 4610 - GUI Programming I
+  Uses jQuery Validation Plugin:
+  https://jqueryvalidation.org/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HW4 Part 1 – jQuery Validation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<main class="container">
+  <h1>HW4 · Part 1 — jQuery Validation</h1>
+  <p class="subtle">Same UI as HW3 — now input is fully validated using jQuery Validation Plugin.</p>
+
+  <form id="hw4-form" novalidate>
+    <div class="grid">
+      
+      <label class="field">
+        <span>Horizontal Start</span>
+        <input id="hStart" name="hStart" type="number">
+      </label>
+
+      <label class="field">
+        <span>Horizontal End</span>
+        <input id="hEnd" name="hEnd" type="number">
+      </label>
+
+      <label class="field">
+        <span>Vertical Start</span>
+        <input id="vStart" name="vStart" type="number">
+      </label>
+
+      <label class="field">
+        <span>Vertical End</span>
+        <input id="vEnd" name="vEnd" type="number">
+      </label>
+
+    </div>
+
+    <div class="actions">
+      <button type="submit" id="buildBtn">Build Table</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </div>
+
+    <div class="status">
+      <span id="okMsg" class="ok"></span>
+      <span id="errMsg" class="err"></span>
+    </div>
+  </form>
+
+  <section class="table-wrap">
+    <div class="scroll">
+      <table id="grid">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<!-- REQUIRED ORDER: jQuery → Validation → app.js -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
